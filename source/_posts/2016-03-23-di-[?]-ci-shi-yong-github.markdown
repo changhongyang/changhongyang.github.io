@@ -11,5 +11,8 @@ categories:
 
 往後的內容主要是：
 
-* Rails101
-* GitHub
+  * Rails101
+  * GitHub
+  * Rails
+
+等等相關開發上的內容，還期許在內容上能夠越來越多元化

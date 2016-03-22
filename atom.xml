@@ -4,7 +4,7 @@
   <title><![CDATA[Chang.H.Y]]></title>
   <link href="http://changhongyang.github.io/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-03-23T00:47:43+08:00</updated>
+  <updated>2016-03-23T01:00:26+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>
@@ -12,5 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[第一次便用Octopress]]></title>
+    <link href="http://changhongyang.github.io/blog/2016/03/23/di-%5B%3F%5D-ci-bian-yong-octopress/"/>
+    <updated>2016-03-23T00:57:43+08:00</updated>
+    <id>http://changhongyang.github.io/blog/2016/03/23/di-[?]-ci-bian-yong-octopress</id>
+    <content type="html"><![CDATA[<h1>第一次使用 Octopress</h1>
+
+<p>還在想該如何開頭寫這篇
+一切都還在學習中</p>
+]]></content>
+  </entry>
   
 </feed>

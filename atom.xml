@@ -4,7 +4,7 @@
   <title><![CDATA[Chang.H.Y]]></title>
   <link href="http://changhongyang.github.io/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-03-23T01:22:10+08:00</updated>
+  <updated>2016-03-23T01:38:03+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>
@@ -14,12 +14,21 @@
 
   
   <entry>
-    <title type="html"><![CDATA[第一次使用Octopress]]></title>
-    <link href="http://changhongyang.github.io/blog/2016/03/23/di-%5B%3F%5D-ci-bian-yong-octopress/"/>
-    <updated>2016-03-23T00:57:43+08:00</updated>
-    <id>http://changhongyang.github.io/blog/2016/03/23/di-[?]-ci-bian-yong-octopress</id>
-    <content type="html"><![CDATA[<p>還在想該如何開頭寫這篇
-一切都還在學習中</p>
+    <title type="html"><![CDATA[第一次使用GitHub]]></title>
+    <link href="http://changhongyang.github.io/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/"/>
+    <updated>2016-03-23T01:26:11+08:00</updated>
+    <id>http://changhongyang.github.io/blog/2016/03/23/di-[?]-ci-shi-yong-github</id>
+    <content type="html"><![CDATA[<p>不知道該如何開頭寫這個第一篇</p>
+
+<p>就交給往後的日子來決定這個內容吧！</p>
+
+<p>往後的內容主要是：</p>
+
+<ul>
+<li>Rails101</li>
+<li>GitHub</li>
+</ul>
+
 ]]></content>
   </entry>
   

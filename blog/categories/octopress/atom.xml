@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Chang.H.Y Note's]]></title>
+  <link href="http://changhongyang.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://changhongyang.github.io/"/>
+  <updated>2016-03-25T23:43:36+08:00</updated>
+  <id>http://changhongyang.github.io/</id>
+  <author>
+    <name><![CDATA[Chang Hong Yang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 增加大頭像]]></title>
+    <link href="http://changhongyang.github.io/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/"/>
+    <updated>2016-03-25T23:39:14+08:00</updated>
+    <id>http://changhongyang.github.io/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>將大頭像放到octopress/source/images/目錄下</p></li>
+<li><p>編輯octopress/source/_includes/custom/asides/about.html:</p></li>
+</ol>
+
+
+<pre><code class="ruby-doc">    &lt;section&gt;
+      &lt;img alt="me" src="http://changhongyang.github.io/images/me.jpg"&gt;
+      &lt;p&gt;這次不記下來，下次必定重頭找過。&lt;/p&gt;
+    &lt;/section&gt;
+</code></pre>
+
+<ol>
+<li></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

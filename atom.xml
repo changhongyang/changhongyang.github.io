@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Chang.H.Y Blog's]]></title>
+  <title><![CDATA[Chang.H.Y Note's]]></title>
   <link href="http://changhongyang.github.io/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-03-23T22:43:38+08:00</updated>
+  <updated>2016-03-25T23:26:11+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>

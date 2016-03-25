@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Chang.H.Y Note's]]></title>
   <link href="http://changhongyang.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-03-25T23:44:21+08:00</updated>
+  <updated>2016-03-25T23:52:45+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>
@@ -24,16 +24,21 @@
 </ol>
 
 
-<pre><code class="ruby-doc">    &lt;section&gt;
-      &lt;img alt="me" src="http://changhongyang.github.io/images/me.jpg"&gt;
-      &lt;p&gt;這次不記下來，下次必定重頭找過。&lt;/p&gt;
-    &lt;/section&gt;
+<pre><code class="ruby">&lt;section&gt;
+  &lt;img alt="me" src="http://changhongyang.github.io/images/me.jpg"&gt;
+  &lt;p&gt;這次不記下來，下次必定重頭找過。&lt;/p&gt;
+&lt;/section&gt;
 </code></pre>
 
 <ol>
-<li></li>
+<li>編輯_config.yml :</li>
 </ol>
 
+
+<pre><code class="ruby">default_asides: [custom/asides/about.html, ...(略)...]
+</code></pre>
+
+<p>這樣就可以在側邊欄裡面增加大頭像了</p>
 ]]></content>
   </entry>
   

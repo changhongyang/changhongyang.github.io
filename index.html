@@ -9,10 +9,12 @@
   <meta name="author" content="Chang Hong Yang">
 
   
-  <meta name="description" content="不知道該如何開頭寫這個第一篇 就交給往後的日子來決定這個內容吧！ 往後的內容主要是： Rails101
-GitHub
-Rails 等等相關開發上的內容，還期許在內容上能夠越來越多元化
-">
+  <meta name="description" content="將大頭像放到octopress/source/images/目錄下
+編輯octopress/source/_includes/custom/asides/about.html: 1
+2
+3
+4
+&lt;section&gt; &lt;img alt=&quot;me&quot; src=& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -85,6 +87,62 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/">Octopress 增加大頭像</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-25T23:39:14+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:39 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ol>
+<li><p>將大頭像放到octopress/source/images/目錄下</p></li>
+<li><p>編輯octopress/source/_includes/custom/asides/about.html:</p></li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="n">section</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;me&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;/images/me.jpg&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="err">這次不記下來，下次必定重頭找過。</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'><span class="sr">&lt;/se</span><span class="n">ction</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>編輯_config.yml :</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">default_asides</span><span class="p">:</span> <span class="o">[</span><span class="n">custom</span><span class="o">/</span><span class="n">asides</span><span class="o">/</span><span class="n">about</span><span class="o">.</span><span class="n">html</span><span class="p">,</span> <span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="p">(</span><span class="err">略</span><span class="p">)</span><span class="o">.</span><span class="n">.</span><span class="o">.]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>這樣就可以在側邊欄裡面增加大頭像了</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/">第一次使用GitHub</a></h1>
     
     
@@ -137,6 +195,10 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/">Octopress 增加大頭像</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/">第一次使用GitHub</a>

@@ -5,11 +5,16 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>關於 - Chang.H.Y Note's</title>
+  <title>Octopress 增加大頭像 - Chang.H.Y Note's</title>
   <meta name="author" content="Chang Hong Yang">
 
   
-  <meta name="description" content="關於 Mar 23rd, 2016 9:22 pm 原本是在學習如何使用GitHub 在學習的過程中發現了可以利用GitHub Page這個功能 搭配Octopress套件架設一個靜態的Blogging 一時興起就透過網路上查詢到的教學資料一步一步的將它架設完成 &hellip;">
+  <meta name="description" content="將大頭像放到octopress/source/images/目錄下
+編輯octopress/source/_includes/custom/asides/about.html: 1
+2
+3
+4
+&lt;section&gt; &lt;img alt=&quot;me&quot; src=& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://changhongyang.github.io/about/">
+  <link rel="canonical" href="http://changhongyang.github.io/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Chang.H.Y Note's" type="application/atom+xml">
@@ -75,73 +80,82 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">關於</h1>
-    <p class="meta">
-
-
-
-
-<time class='entry-date' datetime='2016-03-23T21:22:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>9:22 pm</span></time></p>
-  </header>
-  
-  <p><img src="https://scontent-tpe1-1.xx.fbcdn.net/hprofile-xpt1/v/t1.0-1/p160x160/11052430_10202677213370704_6625367005563717358_n.jpg?oh=288999955f52864ffb76e4fad68a4b6a&amp;oe=5790B3E9" alt="Alt text" /></p>
-
-<hr />
-
-<p>原本是在學習如何使用GitHub</p>
-
-<p>在學習的過程中發現了可以利用GitHub Page這個功能</p>
-
-<p>搭配Octopress套件架設一個靜態的Blogging</p>
-
-<p>一時興起就透過網路上查詢到的教學資料一步一步的將它架設完成</p>
-
-<p>平時並沒有習慣在寫或者是經營Blogging的一個人在架設屬於自己</p>
-
-<p>的Blogging，也算是一件奇怪的事。</p>
-
-<h3>關於我自己</h3>
-
-<p>什麼都想要去學習、接觸，但頂多也只是學會了皮毛</p>
-
-<p>碰到困難也不知道找其它的人幫忙解決問題，接著就</p>
-
-<p>放棄了，興趣都只是一時，對於興趣大多都只有三分</p>
-
-<p>鐘的熱度，很難一直維持下去，期許自己能夠做出改</p>
-
-<p>變。</p>
-
-<h3>關於這個Blogging</h3>
-
-<p>相關的內容期許能有以下內容：</p>
-
-<ul>
-<li><p>Rails學習筆記</p></li>
-<li><p>GitHub使用經驗</p></li>
-<li><p>Markdown語法</p></li>
-<li><p>關於車的經驗</p></li>
-<li><p>出遊分享</p></li>
-</ul>
-
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Octopress 增加大頭像</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
 
-<time class='entry-date' datetime='2016-03-23T21:22:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>9:22 pm</span></time>
+<time class='entry-date' datetime='2016-03-25T23:39:14+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:39 pm</span></time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><ol>
+<li><p>將大頭像放到octopress/source/images/目錄下</p></li>
+<li><p>編輯octopress/source/_includes/custom/asides/about.html:</p></li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="n">section</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;me&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;/images/me.jpg&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="err">這次不記下來，下次必定重頭找過。</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'><span class="sr">&lt;/se</span><span class="n">ction</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>編輯_config.yml :</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">default_asides</span><span class="p">:</span> <span class="o">[</span><span class="n">custom</span><span class="o">/</span><span class="n">asides</span><span class="o">/</span><span class="n">about</span><span class="o">.</span><span class="n">html</span><span class="p">,</span> <span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="p">(</span><span class="err">略</span><span class="p">)</span><span class="o">.</span><span class="n">.</span><span class="o">.]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>這樣就可以在側邊欄裡面增加大頭像了</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Chang Hong Yang</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-03-25T23:39:14+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:39 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
   
   
   
@@ -149,9 +163,14 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/" title="Previous Post: 第一次使用GitHub">&laquo; 第一次使用GitHub</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

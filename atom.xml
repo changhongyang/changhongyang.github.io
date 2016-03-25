@@ -4,7 +4,7 @@
   <title><![CDATA[Chang.H.Y Note's]]></title>
   <link href="http://changhongyang.github.io/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-03-25T23:34:18+08:00</updated>
+  <updated>2016-03-25T23:52:45+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 增加大頭像]]></title>
+    <link href="http://changhongyang.github.io/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/"/>
+    <updated>2016-03-25T23:39:14+08:00</updated>
+    <id>http://changhongyang.github.io/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>將大頭像放到octopress/source/images/目錄下</p></li>
+<li><p>編輯octopress/source/_includes/custom/asides/about.html:</p></li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="n">section</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;me&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;/images/me.jpg&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="err">這次不記下來，下次必定重頭找過。</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'><span class="sr">&lt;/se</span><span class="n">ction</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>編輯_config.yml :</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">default_asides</span><span class="p">:</span> <span class="o">[</span><span class="n">custom</span><span class="o">/</span><span class="n">asides</span><span class="o">/</span><span class="n">about</span><span class="o">.</span><span class="n">html</span><span class="p">,</span> <span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="p">(</span><span class="err">略</span><span class="p">)</span><span class="o">.</span><span class="n">.</span><span class="o">.]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>這樣就可以在側邊欄裡面增加大頭像了</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[第一次使用GitHub]]></title>

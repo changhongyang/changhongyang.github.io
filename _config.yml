@@ -4,7 +4,7 @@
 
 url: http://changhongyang.github.io
 title: Chang.H.Y Note's
-subtitle: 
+subtitle:
 author: Chang Hong Yang
 simple_search: https://www.google.com/search
 description:
@@ -91,8 +91,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: Chang.H.Y
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-75505001-1

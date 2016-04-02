@@ -8,7 +8,9 @@ categories: Octopress
 1. 將大頭像放到octopress/source/images/目錄下
 
 2. 編輯octopress/source/_includes/custom/asides/about.html:
+
 <!--more-->
+
 ``` ruby
 <section>
   <img alt="me" src="/images/me.jpg">

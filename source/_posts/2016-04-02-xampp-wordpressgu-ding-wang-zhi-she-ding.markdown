@@ -10,6 +10,7 @@ categories: XAMPP
 1-1. 尋找
 
 <!--more-->
+
 ```
 LoadModule rewrite_module modules/mod_rewrite.so
 ```

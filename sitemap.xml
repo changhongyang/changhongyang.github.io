@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/</loc>
+<lastmod>2016-04-02T23:53:38+08:00</lastmod>
+</url>
+<url>
 <loc>http://changhongyang.github.io/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/</loc>
 <lastmod>2016-03-25T23:39:14+08:00</lastmod>
 </url>
@@ -19,5 +23,8 @@
 </url>
 <url>
 <loc>http://changhongyang.github.io/blog/categories/octopress/</loc>
+</url>
+<url>
+<loc>http://changhongyang.github.io/blog/categories/xampp/</loc>
 </url>
 </urlset>

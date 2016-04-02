@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Xampp | Chang.H.Y Note's]]></title>
+  <link href="http://changhongyang.github.io/blog/categories/xampp/atom.xml" rel="self"/>
+  <link href="http://changhongyang.github.io/"/>
+  <updated>2016-04-03T00:05:28+08:00</updated>
+  <id>http://changhongyang.github.io/</id>
+  <author>
+    <name><![CDATA[Chang Hong Yang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA['XAMPP Wordpress固定網址設定']]></title>
+    <link href="http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/"/>
+    <updated>2016-04-02T23:53:38+08:00</updated>
+    <id>http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding</id>
+    <content type="html"><![CDATA[<p>一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</p>
+
+<ol>
+<li><p>尋找
+<code>
+LoadModule rewrite_module modules/mod_rewrite.so
+</code>
+確認前面沒有#字號</p></li>
+<li><p>將 AllowOverride None 改為 AllowOverride All
+<code>
+&lt;Directory /&gt;   
+Options FollowSymLinks   
+AllowOverride None   
+&lt;/Directory&gt;
+</code>
+重新啟動XAMPP</p></li>
+</ol>
+
+
+<p>二、修改或新增.htaccess檔案
+<code>
+&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine On
+RewriteBase /wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L]
+&lt;/IfModule&gt;
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

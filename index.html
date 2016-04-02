@@ -9,12 +9,8 @@
   <meta name="author" content="Chang Hong Yang">
 
   
-  <meta name="description" content="將大頭像放到octopress/source/images/目錄下
-編輯octopress/source/_includes/custom/asides/about.html: 1
-2
-3
-4
-&lt;section&gt; &lt;img alt=&quot;me&quot; src=& &hellip;">
+  <meta name="description" content="一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf 尋找 1
+LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 AllowOverride None 改為 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +77,86 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">'XAMPP Wordpress固定網址設定'</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-02T23:53:38+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 pm</span></time>
+        
+           | <a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/#disqus_thread"
+             data-disqus-identifier="http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">評論</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</p>
+
+<ol>
+<li>尋找</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>LoadModule rewrite_module modules/mod_rewrite.so</span></code></pre></td></tr></table></div></figure>
+
+
+<p>確認前面沒有#字號</p>
+
+<ol>
+<li>將 AllowOverride None 改為 AllowOverride All</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;Directory /&gt;   
+</span><span class='line'>Options FollowSymLinks   
+</span><span class='line'>AllowOverride None   
+</span><span class='line'>&lt;/Directory&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>重新啟動XAMPP</p>
+
+<p>二、修改或新增.htaccess檔案</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;IfModule mod_rewrite.c&gt;
+</span><span class='line'>RewriteEngine On
+</span><span class='line'>RewriteBase /wordpress/
+</span><span class='line'>RewriteRule ^index\.php$ - [L]
+</span><span class='line'>RewriteCond %{REQUEST_FILENAME} !-f
+</span><span class='line'>RewriteCond %{REQUEST_FILENAME} !-d
+</span><span class='line'>RewriteRule . /wordpress/index.php [L]
+</span><span class='line'>&lt;/IfModule&gt;</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -199,15 +275,20 @@
   <p>這次不記下來，下次必定重頭找過。</p>
 </section>
 <section>
-  <h1>Categories</h1>
+  <h1>分類</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/octopress/'>octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/xampp/'>xampp (1)</a></li>
 
   </ul>
 </section>
 <section>
-  <h1>Recent Posts</h1>
+  <h1>最新文章</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">'XAMPP Wordpress固定網址設定'</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/">Octopress 增加大頭像</a>

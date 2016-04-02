@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>第一次使用GitHub - Chang.H.Y Note's</title>
+  <title>'XAMPP Wordpress固定網址設定' - Chang.H.Y Note's</title>
   <meta name="author" content="Chang Hong Yang">
 
   
-  <meta name="description" content="不知道該如何開頭寫這個第一篇 就交給往後的日子來決定這個內容吧！ 往後的內容主要是： Rails101
-GitHub
-Rails 等等相關開發上的內容，還期許在內容上能夠越來越多元化
-">
+  <meta name="description" content="一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf 尋找 1
+LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 AllowOverride None 改為 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +19,7 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://changhongyang.github.io/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/">
+  <link rel="canonical" href="http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Chang.H.Y Note's" type="application/atom+xml">
@@ -82,7 +80,7 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
   
   <header>
     
-      <h1 class="entry-title">第一次使用GitHub</h1>
+      <h1 class="entry-title">'XAMPP Wordpress固定網址設定'</h1>
     
     
       <p class="meta">
@@ -91,7 +89,7 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
 
 
 
-<time class='entry-date' datetime='2016-03-23T01:26:11+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>1:26 am</span></time>
+<time class='entry-date' datetime='2016-04-02T23:53:38+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 pm</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://changhongyang.github.io">評論</a>
@@ -101,20 +99,55 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
   </header>
 
 
-<div class="entry-content"><p>不知道該如何開頭寫這個第一篇</p>
+<div class="entry-content"><p>一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</p>
 
-<p>就交給往後的日子來決定這個內容吧！</p>
-
-<p>往後的內容主要是：</p>
-
-<ul>
-<li>Rails101</li>
-<li>GitHub</li>
-<li>Rails</li>
-</ul>
+<ol>
+<li>尋找</li>
+</ol>
 
 
-<p>等等相關開發上的內容，還期許在內容上能夠越來越多元化</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>LoadModule rewrite_module modules/mod_rewrite.so</span></code></pre></td></tr></table></div></figure>
+
+
+<p>確認前面沒有#字號</p>
+
+<ol>
+<li>將 AllowOverride None 改為 AllowOverride All</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;Directory /&gt;   
+</span><span class='line'>Options FollowSymLinks   
+</span><span class='line'>AllowOverride None   
+</span><span class='line'>&lt;/Directory&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>重新啟動XAMPP</p>
+
+<p>二、修改或新增.htaccess檔案</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;IfModule mod_rewrite.c&gt;
+</span><span class='line'>RewriteEngine On
+</span><span class='line'>RewriteBase /wordpress/
+</span><span class='line'>RewriteRule ^index\.php$ - [L]
+</span><span class='line'>RewriteCond %{REQUEST_FILENAME} !-f
+</span><span class='line'>RewriteCond %{REQUEST_FILENAME} !-d
+</span><span class='line'>RewriteRule . /wordpress/index.php [L]
+</span><span class='line'>&lt;/IfModule&gt;</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -130,8 +163,14 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
 
 
 
-<time class='entry-date' datetime='2016-03-23T01:26:11+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>1:26 am</span></time>
+<time class='entry-date' datetime='2016-04-02T23:53:38+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 pm</span></time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/xampp/'>xampp</a>
+  
+</span>
 
 
     </p>
@@ -147,8 +186,8 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/" title="Previous Post: Octopress 增加大頭像">&laquo; Octopress 增加大頭像</a>
       
-        <a class="basic-alignment right" href="/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/" title="Next Post: Octopress 增加大頭像">Octopress 增加大頭像 &raquo;</a>
       
     </p>
   </footer>
@@ -218,8 +257,8 @@ Rails 等等相關開發上的內容，還期許在內容上能夠越來越多�
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://changhongyang.github.io/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/';
-        var disqus_url = 'http://changhongyang.github.io/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/';
+        var disqus_identifier = 'http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/';
+        var disqus_url = 'http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/';
         var disqus_script = 'embed.js';
       
     (function () {

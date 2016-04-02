@@ -4,7 +4,7 @@
   <title><![CDATA[Chang.H.Y Note's]]></title>
   <link href="http://changhongyang.github.io/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-04-03T00:05:28+08:00</updated>
+  <updated>2016-04-03T00:17:25+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>
@@ -14,15 +14,18 @@
 
   
   <entry>
-    <title type="html"><![CDATA['XAMPP Wordpress固定網址設定']]></title>
+    <title type="html"><![CDATA[XAMPP Wordpress固定網址設定]]></title>
     <link href="http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/"/>
     <updated>2016-04-02T23:53:38+08:00</updated>
     <id>http://changhongyang.github.io/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding</id>
-    <content type="html"><![CDATA[<p>一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</p>
+    <content type="html"><![CDATA[<ul>
+<li>1.修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</li>
+</ul>
 
-<ol>
-<li>尋找</li>
-</ol>
+
+<p>1-1. 尋找</p>
+
+<!--more-->
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -31,10 +34,7 @@
 
 <p>確認前面沒有#字號</p>
 
-<ol>
-<li>將 AllowOverride None 改為 AllowOverride All</li>
-</ol>
-
+<p>1-2. 將 AllowOverride None 改為 AllowOverride All</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -46,9 +46,12 @@
 </span><span class='line'>&lt;/Directory&gt;</span></code></pre></td></tr></table></div></figure>
 
 
-<p>重新啟動XAMPP</p>
+<p>1-3. 重新啟動XAMPP</p>
 
-<p>二、修改或新增.htaccess檔案</p>
+<ul>
+<li>2.修改或新增.htaccess檔案</li>
+</ul>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -79,6 +82,9 @@
 <li><p>將大頭像放到octopress/source/images/目錄下</p></li>
 <li><p>編輯octopress/source/_includes/custom/asides/about.html:</p></li>
 </ol>
+
+
+<!--more-->
 
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -114,6 +120,9 @@
     <content type="html"><![CDATA[<p>不知道該如何開頭寫這個第一篇</p>
 
 <p>就交給往後的日子來決定這個內容吧！</p>
+
+<!--more-->
+
 
 <p>往後的內容主要是：</p>
 

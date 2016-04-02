@@ -9,8 +9,8 @@
   <meta name="author" content="Chang Hong Yang">
 
   
-  <meta name="description" content="一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf 尋找 1
-LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 AllowOverride None 改為 &hellip;">
+  <meta name="description" content="
+1.修改/Applications/XAMPP/xamppfiles/etc/httpd.conf 1-1. 尋找 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,7 +83,7 @@ LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 A
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">'XAMPP Wordpress固定網址設定'</a></h1>
+      <h1 class="entry-title"><a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">XAMPP Wordpress固定網址設定</a></h1>
     
     
       <p class="meta">
@@ -102,57 +102,19 @@ LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 A
   </header>
 
 
-  <div class="entry-content"><p>一、修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</p>
-
-<ol>
-<li>尋找</li>
-</ol>
+  <div class="entry-content"><ul>
+<li>1.修改/Applications/XAMPP/xamppfiles/etc/httpd.conf</li>
+</ul>
 
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>LoadModule rewrite_module modules/mod_rewrite.so</span></code></pre></td></tr></table></div></figure>
-
-
-<p>確認前面沒有#字號</p>
-
-<ol>
-<li>將 AllowOverride None 改為 AllowOverride All</li>
-</ol>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;Directory /&gt;   
-</span><span class='line'>Options FollowSymLinks   
-</span><span class='line'>AllowOverride None   
-</span><span class='line'>&lt;/Directory&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>重新啟動XAMPP</p>
-
-<p>二、修改或新增.htaccess檔案</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;IfModule mod_rewrite.c&gt;
-</span><span class='line'>RewriteEngine On
-</span><span class='line'>RewriteBase /wordpress/
-</span><span class='line'>RewriteRule ^index\.php$ - [L]
-</span><span class='line'>RewriteCond %{REQUEST_FILENAME} !-f
-</span><span class='line'>RewriteCond %{REQUEST_FILENAME} !-d
-</span><span class='line'>RewriteRule . /wordpress/index.php [L]
-</span><span class='line'>&lt;/IfModule&gt;</span></code></pre></td></tr></table></div></figure>
+<p>1-1. 尋找</p>
 
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -188,30 +150,12 @@ LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 A
 </ol>
 
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="n">section</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="n">img</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;me&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;/images/me.jpg&quot;</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="err">這次不記下來，下次必定重頭找過。</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'><span class="sr">&lt;/se</span><span class="n">ction</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ol>
-<li>編輯_config.yml :</li>
-</ol>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">default_asides</span><span class="p">:</span> <span class="o">[</span><span class="n">custom</span><span class="o">/</span><span class="n">asides</span><span class="o">/</span><span class="n">about</span><span class="o">.</span><span class="n">html</span><span class="p">,</span> <span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="p">(</span><span class="err">略</span><span class="p">)</span><span class="o">.</span><span class="n">.</span><span class="o">.]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>這樣就可以在側邊欄裡面增加大頭像了</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2016/03/25/octopress-zeng-jia-da-tou-xiang/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -245,18 +189,12 @@ LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 A
 
 <p>就交給往後的日子來決定這個內容吧！</p>
 
-<p>往後的內容主要是：</p>
-
-<ul>
-<li>Rails101</li>
-<li>GitHub</li>
-<li>Rails</li>
-</ul>
-
-
-<p>等等相關開發上的內容，還期許在內容上能夠越來越多元化</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2016/03/23/di-%5B%3F%5D-ci-shi-yong-github/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -287,7 +225,7 @@ LoadModule rewrite_module modules/mod_rewrite.so 確認前面沒有#字號 將 A
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">'XAMPP Wordpress固定網址設定'</a>
+        <a href="/blog/2016/04/02/xampp-wordpressgu-ding-wang-zhi-she-ding/">XAMPP Wordpress固定網址設定</a>
       </li>
     
       <li class="post">

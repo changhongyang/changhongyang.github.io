@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Chang.H.Y Note's]]></title>
   <link href="http://changhongyang.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://changhongyang.github.io/"/>
-  <updated>2016-04-03T00:05:28+08:00</updated>
+  <updated>2016-04-03T00:17:25+08:00</updated>
   <id>http://changhongyang.github.io/</id>
   <author>
     <name><![CDATA[Chang Hong Yang]]></name>
@@ -22,6 +22,9 @@
 <li><p>將大頭像放到octopress/source/images/目錄下</p></li>
 <li><p>編輯octopress/source/_includes/custom/asides/about.html:</p></li>
 </ol>
+
+
+<!--more-->
 
 
 <pre><code class="ruby">&lt;section&gt;

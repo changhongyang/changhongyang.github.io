@@ -8,6 +8,7 @@ categories: XAMPP
 * 1.修改/Applications/XAMPP/xamppfiles/etc/httpd.conf
 
 1-1. 尋找
+
 <!--more-->
 ```
 LoadModule rewrite_module modules/mod_rewrite.so
